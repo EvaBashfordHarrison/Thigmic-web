@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'grenze';
+    src: url('fonts/grenze-Medium.ttf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: #000000;
+}
+
+/* Container for the whole bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Pushes logo left, buttons right */
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000; /* Black background */
+  box-sizing: border-box;
+  z-index: 1000; /* Ensures it stays above p5 canvas */
+}
+
+/* The "Thigmic" Logo */
+.logo {
+  color: white;
+  font-family: 'grenze', serif; 
+  font-size: 32px; /* Adjusted to match the screenshot scale */
+  letter-spacing: 0.5px;
+}
+
+/* Grouping the buttons */
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+/* The Pill Buttons */
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #555; /* Subtle border like the screenshot */
+  padding: 6px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'grenze', serif; /* Consistent branding */
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* The "Active" or filled button (like 'Input' in your image) */
+.nav-btn.active {
+  background-color: white;
+  color: black;
+}
+input, button {
+  z-index: 1001; /* Higher than the navbar and canvas */
+}
+
+/* Specific styling for your sliders to match the vibe */
+input[type=range] {
+  position: absolute;
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+  /* Ensure canvas stays behind the nav */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;}
+
+h1{
+  font-family: 'grenze', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.p5-button-classic {
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 16px;
+  border: 0px solid transparent;
+
+  background: #dddddd;
+  color: #323232;
+
+  cursor: pointer;
+  transition: 
+    background 0.2s ease,
+    color 0.2s ease,
+    border 0.2s ease;
+}
+
+.p5-button-classic:hover {
+  background: #3e4a36;      /* dark */
+  color:#ffffff;
+
+  border: 0px solid #000000;
+}

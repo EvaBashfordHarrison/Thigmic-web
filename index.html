@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thigmic</title></title>
+
+    <nav class="navbar">
+      <div class="logo">Thigmic</div>
+      <div class="nav-links">
+        <button class="nav-btn" onclick="changeMode('glyphMode')">Glyphs</button>
+        <button class="nav-btn" onclick="changeMode('typeTester')">Type Tester</button>
+        <button class="nav-btn" onclick="changeMode('inputMode')">Input Mode</button>
+      </div>
+    </nav>
+    <div id="canvas-container"></div>
+    <script src="lib/p5.min.js"></script>
+    <script src="https://unpkg.com/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>  
+    <!-- <script src="https://unpkg.com/p5.js-svg@1.3.1"></script> -->
+
+    <script src="js/main.js"></script>
+    <script src="js/glyphObject.js"></script>
+    <script src="js/typingMode.js"></script>
+    <script src="js/singleGlyphMode.js"></script>
+    <script src="js/allGlyphsMode.js"></script>
+    <script src="js/inputMode.js"></script>
+     <!-- <script src = "js/gridSetup.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  </body>
+</html>
